@@ -1,0 +1,273 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin:0;
+  font-family:'Karma', serif;
+  font-size:1.3rem;
+  font-weight:normal;
+  line-height:1.5;
+  color:#333;
+  overflow-x:hidden;
+}
+
+.v-header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  color:#fff;
+}
+
+.container{
+  max-width:90%;
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-bottom: 2rem;
+  text-align:left;
+}
+
+.fullscreen-video-wrap{
+  position:absolute;
+  background-size: cover;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+  min-height:100%;
+  min-width:100%;
+}
+
+.header-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#e1bee7;
+  opacity:0.85;
+}
+
+.header-content{
+  z-index:2;
+}
+
+.hide-on-large-only{
+  background-image: url(img/alternative.jpg);
+  background-position: center;
+  background-size:cover;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.header-content h1{
+  font-size:50px;
+  margin-bottom:0;
+}
+
+.header-content p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+}
+
+.header-content2 h1{
+  margin-top: 0px;
+  padding-top:100px;
+  font-size:50px;
+  margin-bottom:0;
+}
+
+.header-content2 p{
+  font-size:1.5rem;
+  display:block;
+  padding-bottom:2rem;
+}
+
+.container-box {
+  position: relative;
+}
+
+.container-picture {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(66, 66, 66, 0.5), rgb(156, 39, 176)), url(img/cover.jpg);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.container-text{
+  position: absolute;
+  display: block;
+  color:white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.btn{
+  background: rgb(156, 39, 176);
+  color:#fff;
+  font-size:1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.btn-margin-top {
+  margin-top: 20px;
+}
+
+.section-a{
+  background: white;
+  color:black;
+}
+
+.section-b{
+  background:#333;
+  color:#fff;
+}
+
+@media(max-width:90%){
+  .container{
+    padding-right:2rem;
+    padding-left:2rem;
+  }
+}
+
+#contacto{
+  font-size:1.5rem;
+  display:block;
+  color:black;
+}
+
+.left{
+  margin-left:50px;
+}
+
+.right{
+  padding-right:25px;
+}
+
+.pastores{
+  height:200px;
+  width:135px;
+  padding-top:30px;
+  margin:auto;
+}
+
+#banner{
+  width:100%;
+  height:auto;
+}
+
+h1{
+  font-family: 'Merienda One', cursive;
+  font-size: 25px;
+}
+
+#ministerios{
+  width: 200px;
+  height: 200px;
+  margin:auto;
+  padding-top: 35px;
+  position: relative;
+}
+
+.page-footer{
+  margin:0px;
+}
+
+#lista-ministerios{
+  padding:10px;
+}
+
+.promo {
+  margin: auto;
+}
+
+.congreso {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+#showcase{
+  background-image: url(img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width:100%;
+  }
+
+.showcase{
+    margin:-5px;
+    padding-top: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+    vertical-align: middle;
+    font-size:3.2rem;
+    color: rgb(201, 75, 75);
+    animation-name: moveInUp;
+    animation-duration: 1s;
+  }
+
+.lead-showcase{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size:2.2rem;
+    color: rgb(201, 75, 75);
+    animation-name: moveInUp;
+    animation-duration: 1s;
+  }
+
+.btn-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.congreso1 {
+  margin-bottom: 25px;
+}
+
+.adobe {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+i{
+  margin-right: 5px;
+}
+
+  @keyframes moveInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10rem); 
+    }
+    
+    50% {
+      opacity: 0;
+      transform: translateY(5rem);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    } 
+  }
